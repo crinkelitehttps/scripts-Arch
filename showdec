@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## Find declarations of c++ functions
+
+grep -RI 'auto\|const\|unsigned\|signed\|register\|volatile\|static\|void\|short\|long\|char\|int\|float\|double\|_Bool\|complex'
+

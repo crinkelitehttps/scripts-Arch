@@ -1,0 +1,9 @@
+#!/bin/bash
+## Quickly schedule a system suspend after a given time in minutes
+
+sleep $1m
+beep
+sleep 20s
+beep
+sleep 20s
+sudo systemctl suspend

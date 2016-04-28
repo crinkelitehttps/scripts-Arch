@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# a script to start a windows 7 virtual machine using qemu
+
+qemu-system-x86_64 -cpu host -vga qxl -enable-kvm -net nic -net user,smb=/home/joe/mnt/torrents/ /home/joe/mnt/qemuvm/win7.raw

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# A script to automatically search subdirectories for files 
+# and open them in vim 
+
+vim $(find . -name $1)

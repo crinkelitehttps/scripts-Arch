@@ -1,0 +1,5 @@
+#!/bin/bash
+## Search through irc logs and extract lines that match the given string
+## omit certain keywords to make the output more ledgable (error prone)
+
+grep -RIh $1 ~/.weechat/logs/irc* | grep -v 'logged\|known\|NickServ\|mode\|Welcome\|banned\|\[TH3-G0D5\]\|Nickname\|nickserv\|\-\-\|\join'

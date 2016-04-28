@@ -1,0 +1,4 @@
+#!/bin/bash
+# find file names that given string in cpp/header files
+
+grep -r $1 | grep -E  '.{0,}(\.h\:|\.cpp\:)' 

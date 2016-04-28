@@ -1,0 +1,3 @@
+#/bin/bash
+#show which files the string occurs in 
+grep -ERI $1 | grep -o '.*\.h\w\|.*\.cpp' | grep -v \: | uniq
